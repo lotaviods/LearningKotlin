@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Learning Kotlin</string>
+    <string name="Change_btn">Change item</string>
+    <string name="Reset_btn">Reset item count</string>
+    <string name="DefaultItem">Click to start counting</string>
+    <string name="NewText">Clicked %1s times</string>
+</resources>
