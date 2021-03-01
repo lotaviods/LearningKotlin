@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.teste.databinding.ActivityMainBinding
+import android.content.Intent as Intent1
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,6 +37,11 @@ class MainActivity : AppCompatActivity() {
             num = 0
             changeText()
         }
+        binding.ButtonListActivity.setOnClickListener {
+            val activityStart = android.content.Intent(this, SecondActivity::class.java)
+            startActivity(activityStart)
+        }
+
 
     }
     

@@ -4,4 +4,9 @@
     <string name="Reset_btn">Reset item count</string>
     <string name="DefaultItem">Click to start counting</string>
     <string name="NewText">Clicked %1s times</string>
+    <string name="HintNome">Nome</string>
+    <string name="HintTelefone">Telefone</string>
+    <string name="HintEmail">Email</string>
+    <string name="ButtonSave">Salvar</string>
+    <string name="ButtonListActivity">Abrir Lista</string>
 </resources>
