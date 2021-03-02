@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.teste.databinding.ActivityMainBinding
-import android.content.Intent as Intent1
+import android.content.Intent
 
 
 class MainActivity : AppCompatActivity() {
@@ -20,11 +20,6 @@ class MainActivity : AppCompatActivity() {
         }
 
         fun changeText(){
-            when (num){
-                10 -> sendToast(num.toString())
-                15 -> sendToast(num.toString())
-            }
-
             binding.textView.text = getString(R.string.NewText, num.toString())
             num++
         }
@@ -37,9 +32,12 @@ class MainActivity : AppCompatActivity() {
             num = 0
             changeText()
         }
-        binding.ButtonListActivity.setOnClickListener {
-            val activityStart = android.content.Intent(this, SecondActivity::class.java)
-            startActivity(activityStart)
+        binding.ButtonOpenForm.setOnClickListener {
+            startActivity(Intent(this, SecondActivity::class.java))
+        }
+        binding.ButtonOpenList.setOnClickListener{
+            //startActivity(Intent(this, ListActivity::class.java))
+            Toast.makeText(this, getString(R.string.Upcoming), Toast.LENGTH_SHORT).show()
         }
 
 

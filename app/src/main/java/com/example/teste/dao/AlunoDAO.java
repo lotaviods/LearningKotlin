@@ -5,14 +5,14 @@ import com.example.teste.model.Aluno;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AlunoDAO {
+public class AlunoDAO extends ArrayList<String> {
 
 
     private final static List<Aluno> alunos = new ArrayList<>();
     public void salva(Aluno aluno) {
         alunos.add(aluno);
     }
-    public ArrayList<Aluno> Lista(){
-        return new ArrayList<Aluno>(alunos);
+    public String Lista(){
+        return alunos.toString();
     }
 }

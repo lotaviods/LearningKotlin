@@ -1,17 +1,18 @@
 package com.example.teste;
 
-import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.teste.dao.AlunoDAO;
 import com.example.teste.model.Aluno;
+
+import java.util.ArrayList;
 
 public class SecondActivity extends AppCompatActivity {
     @Override
@@ -35,8 +36,9 @@ public class SecondActivity extends AppCompatActivity {
 
                 Aluno alunoCriado = new Aluno(StringNome, StringTelefone, StringEmail);
                 dao.salva(alunoCriado);
-
-                Toast.makeText(SecondActivity.this, dao.Lista().toString(), Toast.LENGTH_LONG).show();
+                Intent activityStart = new Intent(SecondActivity.this,ListActivity.class);
+                activityStart.putExtra("contato", dao.Lista());
+                startActivity(activityStart);
             }
         });
     }

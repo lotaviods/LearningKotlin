@@ -52,14 +52,26 @@
         app:layout_constraintVertical_bias="0.504" />
 
     <Button
-        android:id="@+id/ButtonListActivity"
+        android:id="@+id/ButtonOpenForm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/ButtonListActivity"
+        android:text="@string/ButtonOpenForm"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.900" />
+
+    <Button
+        android:id="@+id/ButtonOpenList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ButtonOpenList"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
