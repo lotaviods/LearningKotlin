@@ -11,4 +11,6 @@
     <string name="ButtonOpenForm">Open form</string>
     <string name="ButtonOpenList">Open ListForm</string>
     <string name="Upcoming">Not implemented yet</string>
+    <string name="email">Email:</string>
+    <string name="nome">Nome:</string>
 </resources>
